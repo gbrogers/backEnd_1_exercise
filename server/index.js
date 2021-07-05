@@ -5,10 +5,7 @@ const cors = require("cors");
 
 app.use(express.json());
 
-//array of friends call friendsArr
-
 app.get("/api/users", (req, res) => {
-  //where is URL found?
   const friendsArr = ["Cece", "Luna", "Mabel", "Zoey"];
   res.status(200).send(friendsArr);
 });
